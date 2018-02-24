@@ -7,7 +7,7 @@ body {
 .container {
     padding: 1em;
     margin: 2em 0 0;
-    border: 1px solid #666;
+    border: 1px dashed #999;
 }
 
 .container div {

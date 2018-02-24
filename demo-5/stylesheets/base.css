@@ -1,0 +1,94 @@
+body {
+    background-color: #ffeead;
+    margin: 1em;
+    font-family: sans-serif;
+}
+
+.container,
+.container2 {
+    padding: 1em;
+    margin: 0;
+    border: 1px dashed #999;
+}
+
+.container div,
+.container2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.title {
+    color: #ff6f69;
+    background-color: #ffeead;
+    text-align: center;
+    padding: 10px 0;
+    margin: 1em 0 0;
+}
+
+.container div:nth-child(1n),
+.container2 div:nth-child(1n) {
+    background-color: #96ceb4;
+}
+
+.container div:nth-child(3n),
+.container2 div:nth-child(3n) {
+    background-color: #88d8b0;
+}
+
+.container div:nth-child(2n),
+.container2 div:nth-child(2n) {
+    background-color: #ff6f69;
+}
+
+.container div:nth-child(4n),
+.container2 div:nth-child(4n) {
+    background-color: #ffcc5c;
+}
+
+.go-home {
+    padding: 0.75em 1.5em;
+    display: inline-block;
+    background-color: #96b9ce;
+    border-radius: 4px;
+}
+
+.go-home a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffeead;
+    position: relative;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.go-home a span {
+    letter-spacing: 1px;
+}
+
+.go-home a:hover,
+.go-home a:focus {
+    left: 10px;
+}
+
+.go-home a::before {
+    content: '\02039';
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    opacity: 0;
+    left: -2em;
+    top: -7px;
+    transition: 0.5s;
+}
+
+.go-home a:hover::before,
+.go-home a:focus::before {
+    opacity: 1;
+    left: -0.85em;
+}

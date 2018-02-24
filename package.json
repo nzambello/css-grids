@@ -16,8 +16,8 @@
   },
   "scripts": {
     "start": "yarn test && live-server --port=3000",
-    "test": "stylelint */stylesheets/*.scss",
-    "prettier-all": "prettier --write '*/stylesheets/*.scss'",
+    "test": "stylelint */stylesheets/*.css",
+    "prettier-all": "prettier --write '*/stylesheets/*.css'",
     "precommit": "lint-staged"
   },
   "lint-staged": {

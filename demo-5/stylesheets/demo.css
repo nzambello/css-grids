@@ -1,0 +1,15 @@
+.container,
+.container2 {
+    border: 1px dashed #999;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 100px 100px;
+}
+
+.container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.container2 {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
