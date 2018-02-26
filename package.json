@@ -15,7 +15,7 @@
     "stylelint-config-recommended": "^2.1.0"
   },
   "scripts": {
-    "start": "yarn test && live-server --port=3000",
+    "start": "yarn test; live-server --port=3000",
     "test": "stylelint */stylesheets/*.css",
     "prettier-all": "prettier --write '*/stylesheets/*.css'",
     "precommit": "lint-staged"
