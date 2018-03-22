@@ -1,9 +1,8 @@
 .container {
     display: grid;
-    height: calc(100vh - 8em);
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px auto 40px;
+    grid-template-rows: 40px 75vh 40px;
 }
 
 .header {
