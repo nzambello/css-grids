@@ -6,8 +6,6 @@
   "author": "nzambello",
   "license": "MIT",
   "devDependencies": {
-    "husky": "^0.14.3",
-    "lint-staged": "^7.0.0",
     "live-server": "^1.2.0",
     "prettier": "^1.10.2",
     "stylelint": "^9.1.1",
@@ -16,11 +14,6 @@
   },
   "scripts": {
     "start": "yarn test; live-server --port=3000",
-    "test": "stylelint */stylesheets/*.css",
-    "prettier-all": "prettier --write '*/stylesheets/*.css'",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,json,css}": ["prettier --write", "git add"]
+    "test": "stylelint */stylesheets/*.css"
   }
 }
